@@ -20,6 +20,6 @@ IP=$(docker inspect --format '{{.NetworkSettings.IPAddress}}' ${CONTAINERID})
 
 curl -i http://$IP:8080/site/
 
-docker kill ${CONTAINERID}
-docker rm ${CONTAINERID}
-docker rmi ${IMAGEID}
+#docker kill ${CONTAINERID}
+#docker rm ${CONTAINERID}
+#docker rmi ${IMAGEID}
